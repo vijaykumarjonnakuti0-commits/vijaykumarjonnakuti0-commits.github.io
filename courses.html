@@ -1,155 +1,47 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>All Courses - Student Learning Website</title>
-    <style>
-        body {
-            background: #0f172a;
-            color: white;
-            font-family: Arial;
-            padding: 20px;
-        }
-        h1 { color: #00ffcc; }
-        .course-card {
-            background: #1e293b;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
-            border-left: 5px solid #00ffcc;
-        }
-        .course-card h3 {
-            margin: 0 0 10px 0;
-        }
-        .course-card p {
-            color: #cbd5e1;
-            font-size: 14px;
-        }
-        .btn {
-            display: inline-block;
-            background: #00ffcc;
-            color: #0f172a;
-            padding: 8px 15px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 5px;
-        }
-                /* Feedback Form Styles */
-        .feedback-form {
-            background: #1e293b;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 8px;
-            border: 1px solid #475569;
-        }
-        .feedback-form h2 {
-            color: #00ffcc;
-            margin-top: 0;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #cbd5e1;
-            font-size: 14px;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #475569;
-            background: #0f172a;
-            color: white;
-            box-sizing: border-box;
-        }
-        .submit-btn {
-            background: #00ffcc;
-            color: #0f172a;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-        }
-
-    </style>
+<title>Courses</title>
+<style>
+body{
+    background:#0f172a;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+h1{
+    color:#00ffcc;
+}
+.course{
+    background:#1e293b;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+}
+a{
+    color:#00ffcc;
+    text-decoration:none;
+}
+</style>
 </head>
 <body>
 
-    <h1>Student Learning Courses</h1>
-    <p>మీకు కావలసిన సబ్జెక్టును ఎంచుకుని, బేసిక్స్ నుండి క్లియర్ గా నేర్చుకోండి:</p>
+<h1>Available Courses</h1>
 
-    <div class="course-card">
-        <h3>1. HTML Course</h3>
-        <p>వెబ్‌సైట్ యొక్క ప్రాథమిక నిర్మాణాన్ని (Skeleton) ఎలా తయారు చేయాలో నేర్చుకోండి.</p>
-        <a href="html-course.html" class="btn">Start Learning ➔</a>
-    </div>
-
-    <div class="course-card">
-        <h3>2. CSS Course</h3>
-        <p>వెబ్‌సైట్‌ను రంగులు, స్టైల్స్ మరియు లేఅవుట్‌లతో అందంగా ఎలా డిజైన్ చేయాలో నేర్చుకోండి.</p>
-        <a href="css.html" class="btn">Start Learning ➔</a>
-    </div>
-
-    <div class="course-card">
-        <h3>3. JavaScript (JS) Course</h3>
-        <p>వెబ్‌సైట్‌కి ప్రాణం పోసి, బటన్స్ క్లిక్ చేసినప్పుడు పనులు జరిగేలా (Logic) చేయడం నేర్చుకోండి.</p>
-        <a href="js-course.html" class="btn">Start Learning ➔</a>
-    </div>
-
-    <div class="course-card">
-        <h3>4. DBMS Course</h3>
-        <p>వెబ్‌సైట్ వెనుక ఉండే డేటాను (Data) టేబుల్స్ రూపంలో ఎలా దాచాలో మరియు మేనేజ్ చేయాలో నేర్చుకోండి.</p>
-        <a href="dbms-course.html" class="btn">Start Learning ➔</a>
-          
-    </div>
-
-    <div class="course-card">
-        <h3>5. Operating System (OS) Course</h3>
-        <p>కంప్యూటర్ సాఫ్ట్‌വേర్ మరియు హార్డ్‌വേర్ బ్యాక్‌గ్రౌండ్‌లో ఎలా పని చేస్తాయో నేర్చుకోండి.</p>
-        <a href="os-course.html" class="btn"
-
-    </div>
-    <!-- Contact & Feedback Section -->
-    <div class="feedback-form">
-        <h2>Contact & Feedback</h2>
-        <p style="color: #cbd5e1; font-size: 14px;">మీకు ఏమైనా సందేహాలున్నా లేదా ఈ వెబ్‌సైట్ పై మీ అభిప్రాయాన్ని మాతో పంచుకోవాలన్నా కింద ఫామ్ ఫిల్ చేయండి:</p>
-        
-        <form onsubmit="alert('ధన్యవాదాలు! మీ ఫీడ్‌బ్యాక్ మాకు అందింది.'); return false;">
-            <div class="form-group">
-                <label for="name">మీ పేరు (Name):</label>
-                <input type="text" id="name" required placeholder="Enter your name">
-            </div>
-            
-            <div class="form-group">
-                <label for="email">ఇమెయిల్ (Email ID):</label>
-                <input type="email" id="email" required placeholder="Enter your email">
-            </div>
-            
-            <div class="form-group">
-                <label for="message">మీ సందేశం / ఫీడ్‌బ్యాక్ (Message):</label>
-                <textarea id="message" rows="4" required placeholder="Type your message here..."></textarea>
-            </div>
-            
-            <button type="submit" class="submit-btn">Submit Feedback</button>
-        </form>
-    </div>
-    <!-- Footer Section -->
-     <!-- Footer Section -->
-    <div style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #475569; color: #cbd5e1; font-size: 14px;">
-        <p>© 2026 Student Learning Website. All Rights Reserved.</p>
-        <p style="font-size: 16px;">
-            Designed & Developed with ❤️ by 
-            <a href="https://instagram.com/vij_ay_the_ro_y_al" target="_blank" style="color: #00ffcc; text-decoration: none; font-weight: bold; border-bottom: 2px dashed #00ffcc; padding-bottom: 2px; transition: 0.3s;">
-                Vijay Kumar
-            </a>
-        </p>
-    </div>
-
-    </div>
+<div class="course">
+  <a href="html.html">HTML</a></div>
+<div class="course"></div>
+<a href="<css.html>CSS</a></div>
+<div class="course">
+<a href="#">JavaScript</a></div>
+<div class="course">
+<a href="#">Operating System</a></div>
+<div class="course">
+<a href="#">DBMS</a></div>
+<div class="course">
+<a href="#">Computer Networks</a></div>
+<div class="course">
+<a href="#">DSA</a></div>
 
 </body>
 </html>
