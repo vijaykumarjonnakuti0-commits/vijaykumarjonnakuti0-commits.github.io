@@ -1,46 +1,25 @@
  <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <nav>...</nav>
+    <nav>...</nav> <!-- మీ నావిగేషన్ లింక్స్ -->
 
     <h1>HTML Course</h1>
-    
+
+    <!-- వీడియో క్లాస్ -->
+    <h3>వీడియో క్లాస్:</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lGKGDxwvrEQ" frameborder="0" allowfullscreen></iframe>
+
+    <!-- క్విజ్ సెక్షన్ -->
+    <h3>క్విజ్:</h3>
     <div class="quiz-box">
+        <p><b>ప్రశ్న 1:</b> HTML అంటే ఏమిటి?</p>
         <button class="ans-btn" onclick="toggleAnswer('ans1')">సమాధానం చూడండి</button>
-        <p id="ans1" class="ans-text">ఇక్కడ ఆన్సర్ రాయండి.</p>
+        <p id="ans1" class="ans-text">సమాధానం: HyperText Markup Language</p>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-<h3>వీడియో క్లాస్:</h3>
-<iframe 
-    width="100%" 
-    height="315" 
-    src="https://www.youtube.com/embed/lGKGDxwvrEQ" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen>
-</iframe>
-
-
-
-</html>
-<!-- ప్రశ్న 1 -->
-<div class="quiz-box">
-    <p><b>ప్రశ్న 1:</b> HTML అంటే ఏమిటి?</p>
-    <button class="ans-btn" onclick="toggleAnswer('ans1')">సమాధానం చూడండి</button>
-    <p id="ans1" class="ans-text">సమాధానం: HTML అనేది వెబ్‌సైట్ నిర్మాణానికి ఉపయోగించే భాష.</p>
-</div>
-
-
-<!-- ప్రశ్న 2 -->
-<div class="quiz-box">
-    <p><b>ప్రశ్న 2:</b> HTML లో హెడ్డింగ్ ట్యాగ్ ఏది?</p>
-    <button class="ans-btn" onclick="document.getElementById('ans2').style.display='block'">సమాధానం చూడండి</button>
-    <p id="ans2" class="ans-text">సమాధానం: హెడ్డింగ్ కోసం h1 నుండి h6 వరకు వాడతాము.</p>
-</div>
-<script src="script.js"></script>
