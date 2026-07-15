@@ -1,66 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Operating System Course</title>
-<style>
-body{
-background:#0f172a;
-color:white;
-font-family:Arial;
-padding:20px;
-}
-h1{color:#00ffcc;}
-.os-box {
-background:#1e293b;
-padding:15px;
-border-radius:5px;
-margin:10px 0;
-border-left: 5px solid #ffcc00;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="html-course.html">HTML</a>
+        <a href="css-course.html">CSS</a>
+        <a href="js-course.html">JS</a>
+        <a href="dbms-course.html">DBMS</a>
+        <a href="os-course.html">OS</a>
+    </nav>
 
-<h1>Operating System (OS) Course</h1>
+    <h1>Operating System (OS) Course</h1>
+    
+    <h3>వీడియో క్లాస్:</h3>
+    <!-- ఇక్కడ మీ OS వీడియో ఎంబెడ్ లింక్ ని src లో పెట్టండి -->
+    <iframe width="100%" height="315" src="https://youtu.be/WpdKyLXa9SU?si=mgnGBQIZoiO0emVH" frameborder="0" allowfullscreen></iframe>
 
-<p>Operating System (OS) అనేది కంప్యూటర్ యొక్క హార్డ్‌వేర్ (కీబోర్డ్, మానిటర్, ప్రాసెసర్) మరియు సాఫ్ట్‌వేర్ (యాప్స్, గేమ్స్) మధ్య ఒక వారధిలా పని చేసే ప్రధాన సాఫ్ట్‌వేర్. ఇది లేకపోతే కంప్యూటర్ ఆన్ కూడా అవ్వదు!</p>
+    <h3>క్విజ్:</h3>
+    <div class="quiz-box">
+        <p><b>ప్రశ్న 1:</b> OS అంటే ఏమిటి?</p>
+        <button class="ans-btn" onclick="toggleAnswer('os1')">సమాధానం చూడండి</button>
+        <p id="os1" class="ans-text">సమాధానం: ఆపరేటింగ్ సిస్టమ్ అనేది హార్డ్‌వేర్ మరియు సాఫ్ట్‌వేర్ మధ్య వారధిగా పనిచేస్తుంది.</p>
+    </div>
 
-<h2>Popular OS Examples (ఉదాహరణలు)</h2>
-<p>మనం రోజువారీ జీవితంలో వాడే కొన్ని ముఖ్యమైన ఆపరేటింగ్ సిస్టమ్స్:</p>
-
-<div class="os-box">
-    <strong>1. Windows:</strong> మన పర్సనల్ కంప్యూటర్లు, లాప్‌టాప్‌లలో ఎక్కువగా వాడే OS.
-</div>
-
-<div class="os-box">
-    <strong>2. Android:</strong> మన మొబైల్ ఫోన్లలో వాడే అత్యంత పాపులర్ OS.
-</div>
-
-<div class="os-box">
-    <strong>3. Linux / Unix:</strong> పెద్ద పెద్ద సర్వర్లు, హ్యాకింగ్ మరియు డెవలప్‌మెంట్ కోసం వాడే సెక్యూర్ OS.
-</div>
-
-<br><br>
-<a href="courses.html" style="color:#00ffcc; text-decoration:none;">⬅ Back to Courses</a>
-
+    <script src="script.js"></script>
 </body>
 </html>
-.quiz-box {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-.ans-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.ans-text {
-    margin-top: 10px;
     padding: 10px;
     background-color: #e9ecef;
     border-left: 4px solid #007bff;
