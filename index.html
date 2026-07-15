@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VjBabu.in</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<script>
+
+function searchCards(){
+
+let input = document.getElementById("searchBox").value.toLowerCase();
+
+let cards = document.getElementsByClassName("card");
+
+for(let i=0; i<cards.length; i++){
+
+let text = cards[i].innerText.toLowerCase();
+
+if(text.includes(input)){
+cards[i].style.display="block";
+}
+else{
+cards[i].style.display="none";
+}
+
+}
+
+}
+ 
+</script>
+ <div class="cards">
+
+<div class="card">
+<h2>📚 Courses</h2>
+<h1>25+</h1>
+</div>
+
+<div class="card">
+<h2>👨‍🎓 Students</h2>
+<h1>1000+</h1>
+</div>
+
+<div class="card">
+<h2>🏆 Certificates</h2>
+<h1>500+</h1>
+</div>
+
+<div class="card">
+<h2>🌍 Visitors</h2>
+<h1>10K+</h1>
+</div>
+
+</div>
+<div class="card">
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <h3>What is VjBabu.in?</h3>
+    <p>VjBabu.in is a platform to learn web development.</p>
+
+    <h3>Is it free?</h3>
+    <p>Yes, many beginner lessons are free.</p>
+
+    <h3>How can I contact the founder?</h3>
+    <p>You can contact through the Contact page or Instagram.</p>
+</div>
+<div class="card">
+    <h2>🖼️ Gallery</h2>
+
+    <img src="image1.jpg" width="180" alt="Gallery Image 1">
+    <img src="image2.jpg" width="180" alt="Gallery Image 2">
+    <img src="image3.jpg" width="180" alt="Gallery Image 3">
+    <img src="images/photo1.jpg" width="200">
+</div>
+<footer>
+    <p>© 2026 VjBabu.in</p>
+    <p>Designed & Developed by <b>Vijay Babu</b> ❤️</p>
+    <p>All Rights Reserved.</p>
+</footer>
+ 
+<div class="card">
+    <h2>👥 Visitors</h2>
+    <h1 id="visitorCount">1250</h1>
+    <p>Total Website Visitors</p>
+</div>
+<div class="card">
+    <h2>⭐ Student Reviews</h2>
+
+    <p><b>Rahul:</b> "Excellent website for learning HTML & CSS."</p>
+
+    <p><b>Priya:</b> "Easy to understand lessons. Thank you!"</p>
+
+    <p><b>Arjun:</b> "Very useful platform for beginners."</p>
+</div>
+<body>
+  
+
+<div class="sidebar">
+<h2>📚 VLH</h2>
+<a href="index.html">🏠 Home</a>
+<a href="courses.html">📚 Courses</a>
+<a href="students.html">👨‍🎓 Students</a>
+<a href="progress.html">📊 Progress</a>
+<a href="settings.html">⚙️ Settings</a>
+<a href="contact.html">📩 Help</a>
+<a href="register.html">📝 Register</a>
+</div>
+<div class="header">
+    <img src="logo.png" alt="VjBabu Logo" width="70">
+    <h1>VjBabu.in</h1>
+    <p>Learn • Build • Grow</p>
+</div>
+
+<div class="main">
+  <div class="topbar">
+
+<input type="text" id="searchBox" onkeyup="searchCards()" placeholder="Search here...">
+
+<button>🔍 Search</button>
+
+</div>
+<h1>🌐 VjBabu.in</h1>
+<p>Learn • Build • Grow</p>
+
+<div class="cards">
+
+<div class="card">
+<h2>👥 Users</h2>
+<p>100</p>
+</div>
+
+<div class="card">
+<h2>📚 Courses</h2>
+<p>10</p>
+</div>
+
+<div class="card">
+<h2>🎓 Students</h2>
+<p>250</p>
+</div>
+
+<div class="card">
+<h2>📊 Progress</h2>
+<p>75%</p>
+</div>
+
+</div>
+
+
+<div class="card box">
+<h2>Notifications</h2>
+<p>New HTML Course Added</p>
+<p>JavaScript Class Tomorrow</p>
+</div>
+
+
+<div class="card box">
+<h2>Profile</h2>
+<p>Name: Vijay</p>
+<p>Course: BTech</p>
+</div>
+<div class="card">
+
+<h2>👨‍💻 About the Founder</h2>
+
+<p><b>Vijay Babu</b> is the creator of <b>VjBabu.in</b>.</p>
+
+<p>
+This platform was built to help students learn web development and technology in a simple way.
+</p>
+<div class="card">
+
+<h2>📞 Contact the Founder</h2>
+
+<p>👤 Vijay Babu</p>
+<p>🌐 Website: VjBabu.in</p>
+<p>📧 Email: vijaykumarjonnakuti@0gmail.com</p>
+
+<a href="https://instagram.com/vij_ay_the_ro_y_al" target="_blank">
+<button>📷 Follow on Instagram</button>
+</a>
+
+</div>
+
+<button>Know More</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
