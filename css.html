@@ -1,84 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CSS Course</title>
-
-<style>
-body{
-    background:#0d1328;
-    color:white;
-    font-family:Arial;
-    padding:20px;
-}
-
-h1{
-    color:aqua;
-}
-
-pre{
-    background:#1e293b;
-    padding:10px;
-    border-radius:8px;
-}
-
-a{
-    color:aqua;
-    font-size:20px;
-}
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-    <iframe src="[https://youtu.be/Oi9QvyK8zvk?si=VLNK0umv0TM_ceM8](https://www.youtube.com/embed/YOUR_CSS_VIDEO_ID)"></iframe>
-
 <body>
     <nav>
-    <a href="index.html">Home</a>
-    <a href="html-course.html">HTML</a>
-    <a href="css-course.html">CSS</a>
-    <a href="js-course.html">JS</a>
-    <a href="profile.html">Profile</a>
-</nav>
+        <a href="index.html">Home</a>
+        <a href="html-course.html">HTML</a>
+        <a href="css-course.html">CSS</a>
+        <a href="js-course.html">JS</a>
+    </nav>
 
+    <h1>CSS Course</h1>
+    <p>CSS (Cascading Style Sheets) వెబ్‌సైట్ డిజైన్‌ను అందంగా మార్చడానికి ఉపయోగపడుతుంది.</p>
 
-<h1>CSS Course</h1>
+    <h3>వీడియో క్లాస్:</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_CSS_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 
-<h2>What is CSS?</h2>
+    <h3>క్విజ్:</h3>
+    <div class="quiz-box">
+        <p><b>ప్రశ్న 1:</b> CSS ఫుల్ ఫామ్ ఏమిటి?</p>
+        <button class="ans-btn" onclick="toggleAnswer('css1')">సమాధానం చూడండి</button>
+        <p id="css1" class="ans-text">సమాధానం: Cascading Style Sheets</p>
+    </div>
 
-<p>
-CSS (Cascading Style Sheets) website design ni beautiful ga cheyadaniki use avutundi.
-</p>
-
-<h2>Example</h2>
-
-<pre>
-h1{
-   color:red;
-}
-</pre>
-
-<a href="courses.html">⬅ Back to Courses</a>
-
+    <script src="script.js"></script>
 </body>
 </html>
-.quiz-box {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-.ans-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.ans-text {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #e9ecef;
-    border-left: 4px solid #007bff;
-}
-
-<script src="script.js"></script>
