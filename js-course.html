@@ -1,70 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JavaScript Course</title>
-<style>
-  <script src="script.js"></script>
-  
-body{
-background:#0f172a;
-color:white;
-font-family:Arial;
-padding:20px;
-}
-h1{color:#00ffcc;}
-pre{
-background:#1e293b;
-padding:15px;
-border-radius:5px;
-color:#00ffcc;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<iframe src="https://youtu.be/W6NZfCO5SIk?si=AeEmHgKxF67ijli5></iframe>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="html-course.html">HTML</a>
-    <a href="css-course.html">CSS</a>
-    <a href="js-course.html">JS</a>
-    <a href="profile.html">Profile</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
 
+    <h1>JavaScript Course</h1>
+    
+    <h3>వీడియో క్లాస్:</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_JS_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 
-<h1>JavaScript (JS) Course</h1>
+    <h3>మా YouTube ఛానల్:</h3>
+    <a href="https://www.youtube.com/@YOUR_CHANNEL_LINK" target="_blank">ఇక్కడ క్లిక్ చేసి మా ఛానల్‌ని సబ్‌స్క్రైబ్ చేసుకోండి!</a>
 
-<p>JavaScript అనేది వెబ్‌సైట్‌కి ప్రాణం పోసే లాంగ్వేజ్. దీనిని ఉపయోగించి వెబ్‌సైట్‌లో బటన్స్ క్లిక్ చేసినప్పుడు పనులు జరిగేలా (Logic) చేయవచ్చు.</p>
+    <h3>క్విజ్:</h3>
+    <div class="quiz-box">
+        <p><b>ప్రశ్న 1:</b> JS అంటే ఏమిటి?</p>
+        <button class="ans-btn" onclick="toggleAnswer('js1')">సమాధానం చూడండి</button>
+        <p id="js1" class="ans-text">సమాధానం: JavaScript అనేది వెబ్‌సైట్‌కు ఇంటరాక్టివిటీని జోడించడానికి ఉపయోగించే ప్రోగ్రామింగ్ లాంగ్వేజ్.</p>
+    </div>
 
-<h2>Example (ఉదాహరణ)</h2>
-<p>ఒక బటన్ క్లిక్ చేసినప్పుడు అలర్ట్ మెసేజ్ చూపించడానికి ఇలా రాస్తాం:</p>
-
-<pre>
-&lt;button onclick="alert('Hello Students!')"&gt;Click Me&lt;/button>
-</pre>
-
-<br><br>
-<a href="js-course.html" style="color:#00ffcc; text-decoration:none;">⬅ Back to Courses</a>
-
+    <script src="script.js"></script>
 </body>
 </html>
-.quiz-box {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-.ans-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.ans-text {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #e9ecef;
-    border-left: 4px solid #007bff;
-}
-<script src="script.js"></script>
