@@ -1,3 +1,22 @@
-.quiz-box { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fff; }
-.ans-btn { background-color: #007bff; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; }
-.ans-text { margin-top: 10px; padding: 10px; background-color: #e9ecef; border-left: 4px solid #007bff; display: none; }
+.quiz-box { 
+    margin: 20px 0; 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+}
+.ans-btn { 
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+.ans-text { 
+    margin-top: 10px; 
+    padding: 10px; 
+    background-color: #e2e6ea; 
+    border-left: 5px solid #007bff; 
+    display: none; 
+}
