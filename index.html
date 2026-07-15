@@ -1,97 +1,25 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Student Learning Website</title>
-
-    <style>
-
-    body{
-        margin:0;
-        background:#0f172a;
-        color:white;
-        font-family:Arial, sans-serif;
-        text-align:center;
-    }
-
-    nav{
-        background:#111827;
-        padding:18px;
-    }
-
-    nav h2{
-        display:inline;
-        color:#00ffcc;
-        margin-right:40px;
-    }
-
-    nav a{
-        color:white;
-        text-decoration:none;
-        margin:15px;
-        font-size:18px;
-    }
-
-    nav a:hover{
-        color:#00ffcc;
-    }
-
-    .hero{
-        margin-top:80px;
-    }
-
-    h1{
-        color:#00ffcc;
-        font-size:42px;
-    }
-
-    p{
-        font-size:20px;
-        margin-bottom:30px;
-    }
-
-    button{
-        background:#00ffcc;
-        color:black;
-        border:none;
-        padding:15px 30px;
-        font-size:18px;
-        border-radius:10px;
-        cursor:pointer;
-    }
-
-    button:hover{
-        background:white;
-    }
-
-    </style>
-
+<title>Vijay Learning Hub</title>
 </head>
 
 <body>
 
-<nav>
-    <h2>Student Learning</h2>
+<h1>Welcome to Vijay Learning Hub</h1>
 
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="#">Login</a>
-</nav>
+<p>My First Website</p>
+<br><br>
 
-<div class="hero">
+<button onclick="startLearning()">
+Start Learning
+</button>
 
-<h1>Welcome to Student Learning Website</h1>
-
-<p>
-Learn HTML, CSS, JavaScript, Operating System, DBMS, Computer Networks, DSA and more.
-</p>
-
-<a href="courses.html">
-<button>Start Learning</button>
-</a>
-
-</div>
+<script>
+function startLearning(){
+window.location.href="courses.html";
+}
+</script>
 
 </body>
 </html>
