@@ -57,16 +57,24 @@ function showAnswer(id) {
         సమాధానం: HyperText Markup Language
     </p>
 </div>
-<!-- ప్రశ్న 1 -->
-<div class="quiz-box">
-    <p><b>ప్రశ్న 1:</b> [ఇక్కడ మీ ప్రశ్న రాయండి]</p>
-    <button onclick="document.getElementById('ans1').style.display='block'" class="ans-btn">సమాధానం చూడండి</button>
-    <p id="ans1" class="ans-text" style="display:none;">[ఇక్కడ సమాధానం రాయండి]</p>
-</div>
+.quiz-box {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.ans-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ans-text {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-left: 4px solid #007bff;
+}
 
-<!-- ప్రశ్న 2 -->
-<div class="quiz-box">
-    <p><b>ప్రశ్న 2:</b> [ఇక్కడ మీ ప్రశ్న రాయండి]</p>
-    <button onclick="document.getElementById('ans2').style.display='block'" class="ans-btn">సమాధానం చూడండి</button>
-    <p id="ans2" class="ans-text" style="display:none;">[ఇక్కడ సమాధానం రాయండి]</p>
-</div>
