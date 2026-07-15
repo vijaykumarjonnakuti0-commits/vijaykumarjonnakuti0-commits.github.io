@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Login - Vijay Learning Hub</title>
+
+<style>
+body{
+    margin:0;
+    background:#0f172a;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+}
+
+.box{
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+    width:320px;
+    text-align:center;
+}
+
+h1{
+    color:#00ffcc;
+}
+
+input{
+    width:90%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:#00ffcc;
+    color:black;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:white;
+}
+
+#msg{
+    margin-top:15px;
+    color:#ff8080;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Student Login</h1>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p id="msg"></p>
+
+</div>
+
+<script>
+
+function login(){
+
+var user = document.getElementById("username").value;
+var pass = document.getElementById("password").value;
+
+if(user === "vijay" && pass === "1234"){
+    window.location.href = "dashboard.html";
+}
+else{
+    document.getElementById("msg").innerHTML = "❌ Invalid Username or Password";
+}
+
+}
+
+</script>
+
+</body>
+</html>
