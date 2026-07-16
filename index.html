@@ -189,5 +189,24 @@ window.onload = function () {
     }, 2000);
 };
 </script>
+  <script>
+function counter(id, end, speed){
+    let count = 0;
+    let obj = document.getElementById(id);
+
+    let timer = setInterval(function(){
+        count++;
+        obj.innerHTML = count + "+";
+
+        if(count >= end){
+            clearInterval(timer);
+        }
+    }, speed);
+}
+
+counter("students", 1000, 2);
+counter("courses", 25, 50);
+counter("visitors", 10000, 1);
+  </script>
 </body>
 </html>
