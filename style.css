@@ -199,3 +199,24 @@ body{
 .box, .card{
   color:white;
 }
+.course{
+  width:90%;
+  padding:25px;
+  margin:20px auto;
+  font-size:22px;
+  border-radius:15px;
+  background:#1e293b;
+  color:white;
+}
+  .about{
+  width:90%;
+  margin:20px auto;
+  padding:20px;
+  border-radius:15px;
+  background:#1e293b;
+  color:white;
+}
+
+.about h2{
+  text-align:center;
+}
