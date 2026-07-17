@@ -494,3 +494,6 @@ progress{
     height:auto;
     margin-top:20px;
 }
+body{
+    font-family: "Poppins", sans-serif;
+}
