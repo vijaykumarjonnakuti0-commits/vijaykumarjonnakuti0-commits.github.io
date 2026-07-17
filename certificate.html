@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Certificate</title>
+</head>
+<body style="text-align:center;font-family:Arial;">
+
+<h1>🏆 Certificate of Completion</h1>
+
+<h2>This Certificate is Presented to</h2>
+
+<input type="text" id="name" placeholder="Enter Your Name">
+
+<br><br>
+
+<button onclick="showCertificate()">Generate Certificate</button>
+
+<h2 id="studentName"></h2>
+
+<script>
+function showCertificate(){
+  let name = document.getElementById("name").value;
+  document.getElementById("studentName").innerHTML = name;
+}
+</script>
+
+</body>
+</html>
