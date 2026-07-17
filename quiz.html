@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Quiz</title>
+</head>
+<body>
+
+<h1>HTML Quiz</h1>
+
+<p>1. HTML stands for?</p>
+
+<input type="radio" name="q1"> Hyper Text Markup Language<br>
+<input type="radio" name="q1"> High Text Machine Language<br><br>
+
+<button onclick="checkAnswer()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function checkAnswer(){
+  document.getElementById("result").innerHTML =
+  "✅ Great! Keep Learning.";
+}
+</script>
+
+</body>
+</html>
