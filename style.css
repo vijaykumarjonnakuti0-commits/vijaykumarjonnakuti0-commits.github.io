@@ -500,3 +500,26 @@ body{
 *{
     font-family: "Poppins", sans-serif;
 }
+@media print {
+  body{
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .certificate{
+    background: linear-gradient(135deg,#fff8dc,#e0f2fe) !important;
+    border:12px solid #d4af37 !important;
+  }
+
+  h1{
+    color:#8b0000 !important;
+  }
+
+  h2{
+    color:#1e40af !important;
+  }
+
+  .name{
+    color:#059669 !important;
+  }
+}
